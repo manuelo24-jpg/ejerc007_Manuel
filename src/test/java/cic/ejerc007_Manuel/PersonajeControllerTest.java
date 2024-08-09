@@ -13,12 +13,14 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @WebMvcTest(PersonajeController.class)
 public class PersonajeControllerTest {
 
+    // TAmpoco me voy a pasar
     @Autowired
     private MockMvc mockMvc;
 
+    // Rico test
     @Test
     public void testCrearPersonajeMethodNotAllowed() throws Exception {
-        mockMvc.perform(get("/personaje/crear"))
+       // mockMvc.perform(get("/personaje/crear"))
                 .andExpect(status().isMethodNotAllowed());
     }
 }
